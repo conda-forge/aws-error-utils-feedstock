@@ -1,5 +1,5 @@
 {% set name = "aws-error-utils" %}
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aws-error-utils-{{ version }}.tar.gz
-  sha256: bf89b9f7be8ce8f9fdeba9441a426901f6629a099db31f6e4ed26ac8d48882e0
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 07107af2a2c26706cd9525b7ffbed43f2d07b50d27e39f9e9156c11b2e993c97
 
 build:
   number: 0
